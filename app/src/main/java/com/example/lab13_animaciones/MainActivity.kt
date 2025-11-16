@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
-                    AnimatedVisibilityExample()
+                    AnimateColorExample()
                 }
             }
         }
