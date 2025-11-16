@@ -20,8 +20,9 @@ fun AnimateColorExample() {
 
     val animatedColor by animateColorAsState(
         targetValue = if (isBlue) Color(0xFF2196F3) else Color(0xFF4CAF50),
-        animationSpec = tween(
-            durationMillis = 600
+        animationSpec = spring(
+            dampingRatio = Spring.DampingRatioMediumBouncy,
+            stiffness = Spring.StiffnessLow
         ),
         label = "BoxColorAnimation"
     )
